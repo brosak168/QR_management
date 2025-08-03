@@ -84,10 +84,11 @@ WSGI_APPLICATION = 'management_system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 import dj_database_url
+
+import dj_database_url
+
 DATABASES = {
-    'default': {
-       'default': dj_database_url.config(default='sqlite:///db.sqlite3', conn_max_age=600)
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URpostgresql://postgres:IuRdDxneNYARJShOmkOSgmCJRBcyjXMC@postgres.railway.internal:5432/railway'))
 }
 
 
