@@ -88,7 +88,7 @@ import dj_database_url
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URpostgresql://postgres:IuRdDxneNYARJShOmkOSgmCJRBcyjXMC@postgres.railway.internal:5432/railway'))
+    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
 }
 
 
